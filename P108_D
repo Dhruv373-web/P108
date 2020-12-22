@@ -1,0 +1,15 @@
+import random
+import plotly.express as px
+count = []
+dice_result = []
+for i in range(0, 100):
+    brand1 = random.randint(1, 6)
+    brand2 = random.randint(1, 6)
+    brand_result.append(brand1 + brand2)
+    count.append(i)
+
+print(count,brand_result)
+
+fig = px.bar(x=brand_result,y=count)
+fig.show()
+
